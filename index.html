@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1 class="logo">City Explorer</h1>
+    <nav class="menu">
+        <a href="#destinatii">Destinații</a>
+        <a href="#planifica">Planifică</a>
+        <a href="#recomandari">Recomandări</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="destinatii" class="section">
+        <h2>Destinații</h2>
+        <div class="cards-grid">
+            <article class="card featured">
+                <h3>Lisabona</h3>
+                <p class="country">Portugalia</p>
+                <p>Un oraș superb pe coastă, renumit pentru străduțele sale pietruite, tramvaiele galbene și arhitectura colorată.</p>
+                <p class="duration"><strong>Durată recomandată:</strong> 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Roma</h3>
+                <p class="country">Italia</p>
+                <p>Orașul Etern oferă o incursiune fascinantă în istorie, cu monumente precum Colosseumul și Fontana di Trevi.</p>
+                <p class="duration"><strong>Durată recomandată:</strong> 5 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Praga</h3>
+                <p class="country">Cehia</p>
+                <p>Orașul celor o sută de turnuri impresionează prin Castelul Praga, Podul Carol și atmosfera sa medievală.</p>
+                <p class="duration"><strong>Durată recomandată:</strong> 3 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Barcelona</h3>
+                <p class="country">Spania</p>
+                <p>Cunoscută pentru capodoperele lui Gaudí, plajele urbane și viața de noapte vibrantă.</p>
+                <p class="duration"><strong>Durată recomandată:</strong> 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Viena</h3>
+                <p class="country">Austria</p>
+                <p>Capitală imperială faimoasă pentru palatele sale grandioase, muzeele de artă și cultura cafelei.</p>
+                <p class="duration"><strong>Durată recomandată:</strong> 3 zile</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="planifica" class="section">
+        <h2>Planifică</h2>
+        <form class="plan-form">
+            <div class="form-group">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" placeholder="Numele tău" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Praga">Praga</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Viena">Viena</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" min="1" max="30" placeholder="Ex: 5" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Planifică excursia</button>
+        </form>
+    </section>
+
+    <section id="recomandari" class="section">
+        <h2>Recomandări</h2>
+        <ul class="tips-list">
+            <li>Rezervă biletele de intrare la muzee și atracții principale în avans pentru a evita cozile.</li>
+            <li>Folosește transportul în comun local sau optează pentru un card turistic de oraș.</li>
+            <li>Incearcă preparatele tradiționale în restaurante frecventate de localnici, departe de zonele ultraturistice.</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Student. Toate drepturile rezervate.</p>
+</footer>
+
+</body>
+</html>
